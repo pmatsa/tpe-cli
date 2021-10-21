@@ -1,7 +1,5 @@
 #! /usr/bin/env node
-
 const { program } = require('commander')
-
 /**
  *  Devices 
  */
@@ -10,19 +8,15 @@ const deviceShowRef = require('./commands/devices/device-show-ref')
 const deviceShowEUI = require('./commands/devices/device-show-eui')
 const deviceAddRoute = require('./commands/devices/device-add-route')
 const deviceDeleteRoute = require('./commands/devices/device-delete-route')
-
 /**
  *  Routes 
  */
 const routesList = require('./commands/routes/routes-list')
 const routeShow = require('./commands/routes/route-show')
-
-
 /**
  *  Configuration 
  */
 const configure = require('./commands/configure')
-
 
 program
     .command('configure <token>')
@@ -63,6 +57,5 @@ program
     .command('route-show <routeRef>')
     .description('Lists a specific route information on your SaaS TPE.')
     .action(routeShow)
-
 
 program.parse()
