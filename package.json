@@ -1,0 +1,24 @@
+{
+  "name": "tpe-cli",
+  "version": "1.0.0",
+  "description": "CLI tool that manages devices and application outputs on Thingpark Enterprise API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "thingpark-enterprise",
+    "aws"
+  ],
+  "author": "Panos Matsaridis",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.23.0",
+    "chalk": "^4.1.2",
+    "commander": "^8.2.0",
+    "conf": "^10.0.3"
+  },
+  "bin": {
+    "tpe": "index.js"
+  }
+}
