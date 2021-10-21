@@ -8,6 +8,7 @@ async function deviceShow(deviceRef) {
 
     if (!conf.get('token')) {
         console.log(chalk.red.bold('No token set. Use tpe configure <token> to set.'))
+        return null
     }
 
     await axios.get('https://thingparkenterprise.eu.actility.com/thingpark/dx/core/latest/api/devices/' + deviceRef, {

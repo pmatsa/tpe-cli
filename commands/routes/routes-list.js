@@ -6,6 +6,7 @@ async function routesList() {
 
     if (!conf.get('token')) {
         console.log(chalk.red.bold('No token set. Use "tpe configure <token>" to set.'))
+        return null
     }
 
     let routes = null

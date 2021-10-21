@@ -1,8 +1,10 @@
+//TODO:
 
-
-// for each device in alexpolh.csv 
+// for each device in deviceEuis.csv 
 //     if (device hasEUI){
 //         axios.get deviceRef
-//     }
-//     tpe device-update-routes deviceRef routeRef
+//     }.then(r =>{
+//          tpe device-update-routes deviceRef routeRef
+//      })
+//     
 // endfor
